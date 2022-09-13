@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="game-board">
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+    <div class="box" onclick="place(this)"></div>
+</div>
+<script>
+    let currentPlayer = "o";
+    function place(box) {
+        if(box.innerText != "") return;
+        box.innerText = currentPlayer;
+        currentPlayer == "o" ? currentPlayer = "x" : currentPlayer = "o";
+    }
+    alert()
+</script>
+</body>
+</html>
